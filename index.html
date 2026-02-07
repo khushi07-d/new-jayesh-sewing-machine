@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Jayesh Sewing Machine Co.</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='uploads/logo.jpg') }}" width="150">
+
+
+<h1>New Jayesh Sewing Machine Co.</h1>
+
+<p>
+    We provide high quality sewing machines and reliable services
+    for industrial and commercial use.
+   
+</p>
+<h2>Brands We Deal In</h2>
+<p>
+Jayesh • Brother • Jack  • Zoje • Juki and many other company.
+</p>
+
+<h2>Why Choose Us?</h2>
+
+<ul>
+    <li>✔ 50+ Years of Experience in Sewing Machines</li>
+    <li>✔ Trusted by Local Tailors & Shops</li>
+    <li>✔ High Quality Machines & Genuine Spare Parts</li>
+    <li>✔ Affordable Prices & Honest Service</li>
+    <li>✔ Reliable Repair & After-Sales Support</li>
+</ul>
+<h2>Business Highlights</h2>
+<ul>
+  
+  <li>✔ Fast Repair Turnaround</li>
+  <li>✔ Genuine Parts Only</li>
+  <li>✔ Customer Satisfaction First</li>
+</ul>
+
+
+<h2>Our Machines & Work</h2>
+<p>Images will be shown here.</p>
+<div class="gallery">
+    <img src="{{ url_for('static', filename='uploads/machine7.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/shop.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine12.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine11.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine9.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine8.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine1.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine2.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine13.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine10.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine6.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine14.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine15.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine16.jpeg') }}">
+    <img src="{{ url_for('static', filename='uploads/machine17.jpeg') }}">
+</div>
+<h2>Working Hours</h2>
+
+<ul>
+    <li>Monday – Saturday: 9:00 AM – 8:00 PM</li>
+    <li>Sunday: Closed</li>
+</ul>
+
+<h2>Status</h2>
+<p id="status">Checking status...</p>
+
+<script>
+    const now = new Date();
+    const hour = now.getHours();
+
+    const statusText = document.getElementById("status");
+
+    if (hour >= 9 && hour < 20) {
+        statusText.innerHTML = "🟢 Open Now";
+        statusText.style.color = "green";
+    } else {
+        statusText.innerHTML = "🔴 Closed Now";
+        statusText.style.color = "red";
+    }
+</script>
+<h2>Customer Reviews</h2>
+
+<a href="https://maps.app.goo.gl/d9H8rPKBmtMBdZhSA" target="_blank">
+    ⭐ Write a Review on Google
+</a>
+
+<h2>Customer Reviews</h2>
+
+<div class="reviews">
+    <div class="review">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>Very good sewing machine and excellent service.</p>
+        <strong>– Ramesh Patel</strong>
+    </div>
+
+    <div class="review">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>Trusted shop. Good quality machines at fair price.</p>
+        <strong>– Maheshbhai</strong>
+    </div>
+
+    <div class="review">
+        <p>⭐⭐⭐⭐</p>
+        <p>Repair service is fast and reliable.</p>
+        <strong>– Suresh</strong>
+    </div>
+</div>
+<div class="cta-box">
+  <h2>Need a Sewing Machine or Repair?</h2>
+  <p>Call us or WhatsApp for quick support and best prices.</p>
+  <a href="tel:+919925776362">📞 Call Now</a>
+  <a href="https://wa.me/919925776362">💬 WhatsApp Now</a>
+</div>
+
+<h2>Contact Us</h2>
+<p>
+📞 Phone:
+<a href="tel:+91 9925776362">+91 9925776362</a><br>
+
+💬 WhatsApp:
+<a href="https://wa.me/9925776362" target="_blank">
+Chat on WhatsApp
+</a><br>
+
+📧 Email:
+<a href="mailto:newjayeshsewingmachine78@gmail.com">newjayeshsewingmachine78@gmail.com</a><br>
+
+📍 Address:F/12+57, Silver point, Zakli talav , Borsad-388540.
+</p>
+<footer class="footer">
+    <p>© 2026 New Jayesh Sewing Machine Co.</p>
+    <p>All Rights Reserved</p>
+    <p>📍 Serving local tailors & factories</p>
+  </footer>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.4233235385577!2d72.89697267424826!3d22.413087238799797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fb344459b4463%3A0xbdbf6c8028e0cef!2sNew%20Jayesh%20sewing%20machine!5e0!3m2!1sen!2sin!4v1770279767848!5m2!1sen!2sin"
+width="100%" height="300" style="border:0;"
+allowfullscreen="" loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</body>
+</html>
