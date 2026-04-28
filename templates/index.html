@@ -4,6 +4,19 @@
     <title>New Jayesh Sewing Machine Co.</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+<style>
+.image-gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px !important;
+}
+
+.image-gallery img {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+}
+</style>
 <body>
     <img src="{{ url_for('static', filename='images/logo.jpg') }}" width="150">
 
@@ -40,7 +53,7 @@ Jayesh • Brother • Jack  • Zoje • Juki and many other company.
 
 <h2>Our Machines & Work</h2>
 <p>Images will be shown here.</p>
-<div class="gallery">
+<div class="image-gallery">
     <img src="{{ url_for('static', filename='images/machine7.jpeg') }}">
     <img src="{{ url_for('static', filename='images/shop.jpeg') }}">
     <img src="{{ url_for('static', filename='images/machine12.jpeg') }}">
